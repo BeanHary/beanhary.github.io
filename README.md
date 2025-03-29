@@ -14,16 +14,9 @@
   - [Netlify](https://beanbag-harry.netlify.app/) (国内推荐)
 - **互动功能**：
   - 评论系统：[Valine](https://valine.js.org/)
-  - 评论头像：[Gravatar](http://cn.gravatar.com/)
   - 本地搜索：[Hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb)
-  - 内容订阅：RSS 支持
+  - RSS订阅：[Hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
   
-
-## 导航 🧭
-
-- 主题相关信息：请查看首页底部
-- 博客仓库：见页面底部
-- 更多链接：可在右侧边栏找到
 
 ## 写在最后 ✨
 
