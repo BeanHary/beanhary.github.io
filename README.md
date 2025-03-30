@@ -13,8 +13,8 @@
   - [GitHub Pages](https://beanhary.github.io/) (国际访问)
   - [Netlify](https://beanbag-harry.netlify.app/) (国内推荐)
 - **互动功能**：
-  - 评论系统：[Valine](https://valine.js.org/)
-  - 本地搜索：[Hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb)
+  - 评论系统（停用）：[Gitalk](https://github.com/gitalk/gitalk)
+  - 本地搜索（停用）：[Hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb)
   - RSS订阅：[Hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
   
 
