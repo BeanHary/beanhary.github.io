@@ -15,6 +15,7 @@
 - **互动功能**：
   - 本地搜索：[Hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb)
   - RSS订阅：[Hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
+  - 夜间模式切换：[Hexo-next-darkmode](https://github.com/rqh656418510/hexo-next-darkmode)
 
 ## 写在最后 ✨
 
