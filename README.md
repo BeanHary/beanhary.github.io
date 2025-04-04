@@ -12,10 +12,11 @@
 - **部署节点**：
   - [GitHub Pages](https://beanhary.github.io/) (国际访问)
   - [Netlify](https://beanbag-harry.netlify.app/) (国内推荐)
-- **互动功能**：
+- **所用插件**：
   - 本地搜索：[Hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb)
   - RSS订阅：[Hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
   - 夜间模式切换：[Hexo-next-darkmode](https://github.com/rqh656418510/hexo-next-darkmode)
+  - 数学公式渲染：[Hexo-filter-mathjax](https://github.com/next-theme/hexo-filter-mathjax)
 
 ## 写在最后 ✨
 
