@@ -17,6 +17,7 @@
   - RSS订阅：[Hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
   - 夜间模式切换：[Hexo-next-darkmode](https://github.com/rqh656418510/hexo-next-darkmode)
   - 数学公式渲染：[Hexo-filter-mathjax](https://github.com/next-theme/hexo-filter-mathjax)
+  - ~~里BeanBag访问限制：[Hexo-hide-posts](https://github.com/prinsss/hexo-hide-posts)~~
 
 ## 写在最后 ✨
 
