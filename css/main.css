@@ -1248,7 +1248,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #d5ff34;
+  background: #4efffe;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2001,6 +2001,7 @@ pre code {
   border-bottom: 0;
   color: var(--link-color);
   display: inline-block;
+  max-width: 100%;
   position: relative;
 }
 .posts-expand .post-title-link::before {
@@ -2242,6 +2243,7 @@ pre code {
   max-width: 180px;
   position: absolute;
   transform: translate(-50%, 20px);
+  z-index: 1;
 }
 .category-all-page .category-all-title {
   text-align: center;
@@ -2518,6 +2520,7 @@ ul.breadcrumb li:last-child {
 }
 .search-popup p.search-result {
   border-bottom: 1px dashed #ccc;
+  margin: 0 0 10px;
   padding: 5px 0;
 }
 .search-popup .search-input-container {
