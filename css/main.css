@@ -20,10 +20,10 @@
   --btn-default-hover-bg: transparent;
   --btn-default-hover-color: var(--link-hover-color);
   --btn-default-hover-border-color: var(--link-hover-color);
-  --highlight-background: #f3f3f3;
-  --highlight-foreground: #444;
-  --highlight-gutter-background: #e1e1e1;
-  --highlight-gutter-foreground: #555;
+  --highlight-background: #1e1e1e;
+  --highlight-foreground: #dcdcdc;
+  --highlight-gutter-background: #313131;
+  --highlight-gutter-foreground: #c9c9c9;
   color-scheme: light;
 }
 html {
@@ -373,114 +373,97 @@ pre code.hljs {
 code.hljs {
   padding: 3px 5px
 }
-/*!
-  Theme: Default
-  Description: Original highlight.js style
-  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
-  Maintainer: @highlightjs/core-team
-  Website: https://highlightjs.org/
-  License: see project LICENSE
-  Touched: 2021
-*/
 /*
-This is left on purpose making default.css the single file that can be lifted
-as-is from the repository directly without the need for a build step
-
-Typically this "required" baseline CSS is added by `makestuff.js` during build.
-*/
-pre code.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 1em
-}
-code.hljs {
-  padding: 3px 5px
-}
-/* end baseline CSS */
+ * Visual Studio 2015 dark style
+ * Author: Nicolas LLOBERA <nllobera@gmail.com>
+ */
 .hljs {
-  background: #F3F3F3;
-  color: #444
-}
-/* Base color: saturation 0; */
-.hljs-subst {
-  /* default */
-  
-}
-/* purposely ignored */
-.hljs-formula,
-.hljs-attr,
-.hljs-property,
-.hljs-params {
-  
-}
-.hljs-comment {
-  color: #697070
-}
-.hljs-tag,
-.hljs-punctuation {
-  color: #444a
-}
-.hljs-tag .hljs-name,
-.hljs-tag .hljs-attr {
-  color: #444
+  background: #1E1E1E;
+  color: #DCDCDC
 }
 .hljs-keyword,
-.hljs-attribute,
-.hljs-selector-tag,
-.hljs-meta .hljs-keyword,
-.hljs-doctag,
-.hljs-name {
-  font-weight: bold
-}
-/* User color: hue: 0 */
-.hljs-type,
-.hljs-string,
-.hljs-number,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-quote,
-.hljs-template-tag,
-.hljs-deletion {
-  color: #880000
-}
-.hljs-title,
-.hljs-section {
-  color: #880000;
-  font-weight: bold
-}
-.hljs-regexp,
+.hljs-literal,
 .hljs-symbol,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr,
-.hljs-operator,
-.hljs-selector-pseudo {
-  color: #ab5656
+.hljs-name {
+  color: #569CD6
 }
-/* Language color: hue: 90; */
-.hljs-literal {
-  color: #695
+.hljs-link {
+  color: #569CD6;
+  text-decoration: underline
 }
 .hljs-built_in,
-.hljs-bullet,
-.hljs-code,
-.hljs-addition {
-  color: #397300
+.hljs-type {
+  color: #4EC9B0
 }
-/* Meta color: hue: 200 */
-.hljs-meta {
-  color: #1f7199
+.hljs-number,
+.hljs-class {
+  color: #B8D7A3
 }
+.hljs-string,
 .hljs-meta .hljs-string {
-  color: #38a
+  color: #D69D85
 }
-/* Misc effects */
+.hljs-regexp,
+.hljs-template-tag {
+  color: #9A5334
+}
+.hljs-subst,
+.hljs-function,
+.hljs-title,
+.hljs-params,
+.hljs-formula {
+  color: #DCDCDC
+}
+.hljs-comment,
+.hljs-quote {
+  color: #57A64A;
+  font-style: italic
+}
+.hljs-doctag {
+  color: #608B4E
+}
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-tag {
+  color: #9B9B9B
+}
+.hljs-variable,
+.hljs-template-variable {
+  color: #BD63C5
+}
+.hljs-attr,
+.hljs-attribute {
+  color: #9CDCFE
+}
+.hljs-section {
+  color: gold
+}
 .hljs-emphasis {
   font-style: italic
 }
 .hljs-strong {
   font-weight: bold
+}
+/*.hljs-code {
+  font-family:'Monospace';
+}*/
+.hljs-bullet,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #D7BA7D
+}
+.hljs-addition {
+  background-color: #144212;
+  display: inline-block;
+  width: 100%
+}
+.hljs-deletion {
+  background-color: #600;
+  display: inline-block;
+  width: 100%
 }
 .highlight:hover .copy-btn,
 .code-container:hover .copy-btn {
@@ -804,6 +787,10 @@ pre code {
     transform: translate(1pt, -2pt) rotate(-1deg);
   }
 }
+.mermaid {
+  margin-bottom: 20px;
+  text-align: center;
+}
 .post-body .note {
   border-radius: 3px;
   margin-bottom: 20px;
@@ -834,6 +821,15 @@ pre code {
 .post-body .note :last-child {
   margin-bottom: 0;
 }
+.post-body .note:not(.no-icon) {
+  padding-left: 2.5em;
+}
+.post-body .note:not(.no-icon)::before {
+  font-size: 1.5em;
+  left: 0.3em;
+  position: absolute;
+  top: calc(50% - 1em);
+}
 .post-body .note.default {
   border-left-color: #777;
 }
@@ -842,6 +838,12 @@ pre code {
 .post-body .note.default h4,
 .post-body .note.default h5,
 .post-body .note.default h6 {
+  color: #777;
+}
+.post-body .note.default:not(.no-icon)::before {
+  content: '\f0a9';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
   color: #777;
 }
 .post-body .note.primary {
@@ -854,6 +856,12 @@ pre code {
 .post-body .note.primary h6 {
   color: #6f42c1;
 }
+.post-body .note.primary:not(.no-icon)::before {
+  content: '\f055';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: #6f42c1;
+}
 .post-body .note.info {
   border-left-color: #428bca;
 }
@@ -862,6 +870,12 @@ pre code {
 .post-body .note.info h4,
 .post-body .note.info h5,
 .post-body .note.info h6 {
+  color: #428bca;
+}
+.post-body .note.info:not(.no-icon)::before {
+  content: '\f05a';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
   color: #428bca;
 }
 .post-body .note.success {
@@ -874,6 +888,12 @@ pre code {
 .post-body .note.success h6 {
   color: #5cb85c;
 }
+.post-body .note.success:not(.no-icon)::before {
+  content: '\f058';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: #5cb85c;
+}
 .post-body .note.warning {
   border-left-color: #f0ad4e;
 }
@@ -884,6 +904,12 @@ pre code {
 .post-body .note.warning h6 {
   color: #f0ad4e;
 }
+.post-body .note.warning:not(.no-icon)::before {
+  content: '\f06a';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: #f0ad4e;
+}
 .post-body .note.danger {
   border-left-color: #d9534f;
 }
@@ -892,6 +918,12 @@ pre code {
 .post-body .note.danger h4,
 .post-body .note.danger h5,
 .post-body .note.danger h6 {
+  color: #d9534f;
+}
+.post-body .note.danger:not(.no-icon)::before {
+  content: '\f056';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
   color: #d9534f;
 }
 .post-body .tabs {
@@ -1306,7 +1338,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #77fc9a;
+  background: #ffff93;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);

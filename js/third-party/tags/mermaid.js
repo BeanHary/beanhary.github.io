@@ -20,11 +20,11 @@ document.addEventListener('page:loaded', () => {
         parent.parentNode.replaceChild(box, parent);
       });
       mermaid.initialize({
-        theme    : CONFIG.darkmode && window.matchMedia('(prefers-color-scheme: dark)').matches ? CONFIG.mermaid.theme.dark : CONFIG.mermaid.theme.light,
-        logLevel : 4,
+        theme: CONFIG.darkmode && window.matchMedia('(prefers-color-scheme: dark)').matches ? CONFIG.mermaid.theme.dark : CONFIG.mermaid.theme.light,
+        logLevel: 4,
         flowchart: { curve: 'linear' },
-        gantt    : { axisFormat: '%m/%d/%Y' },
-        sequence : { actorMargin: 50 }
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 }
       });
       mermaid.run();
     });
