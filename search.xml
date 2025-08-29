@@ -370,4 +370,45 @@
         <tag>Galgame</tag>
       </tags>
   </entry>
+  <entry>
+    <title>江恬生日倒计时</title>
+    <url>/2025/09/01/%E6%B1%9F-%E5%80%92%E8%AE%A1%E6%97%B6%20/</url>
+    <content><![CDATA[<!-- markdownlint-disable MD039 MD033 -->
+<div style="text-align: center; padding: 15px; background: #fffaf0; border-radius: 8px;">
+    <p style="font-size: 1.2em; color: #ffb300;">🎂 距离九一还有：</p>
+    <div id="days-count" style="font-size: 2em; color: #ff8c00; font-weight: bold;"></div>
+
+
+<script>
+(function() {
+    function calculateDays() {
+        const currentYear = new Date().getFullYear();
+        const targetDate = new Date(currentYear, 8, 1); // 6月1日
+        const today = new Date();
+
+        // 重置时间为同一天的0点
+        targetDate.setHours(0, 0, 0, 0);
+        today.setHours(0, 0, 0, 0);
+
+        const diff = targetDate - today;
+        const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+        if(days === 0) {
+            document.getElementById('days-count').textContent = "生日快乐，恶魔过境……";
+        } else if(days > 0) {
+            document.getElementById('days-count').textContent = `${days} 天`;
+        } else {
+            document.getElementById('days-count').textContent = "我要上学校～天天不迟到♪";
+        }
+    }
+    calculateDays();
+    setInterval(calculateDays, 1000 * 60 * 60); // 每小时检查一次
+})();
+</script>
+
+]]></content>
+      <tags>
+        <tag>Love-ChuChu</tag>
+      </tags>
+  </entry>
 </search>
