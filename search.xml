@@ -502,10 +502,13 @@ D -.-&gt;|功亏一篑的世界重构|P
 <p>　　</p>
 <p>　　脑子蓦地一片空白，呆呆地望向消失在白光的人影，连自己站在此处的理由都不知道。</p>
 <p>　　像是做了很长的一个梦，等我回过神来，首先摸到的是林笃软软的头发，其次才意识到自己正在１楼不知所措。</p>
-<p>　　“我感觉……自己像忘记了什么重要的东西……”</p>
+<p>　　“咦……我刚才想说什么来着？忘记了……像忘记了什么重要的东西……”</p>
+<p>　　怅然若失。</p>
+<p>　　是什么情感呢？悲伤吗，寂寞吗？</p>
 <p>　　“噗！许○○你哭什么？奇怪……脸边是湿的……为什么？我也哭了吗？”</p>
 <p>　　世间哭的原因不计其数，可以粗略分成两种：第一种是为自己而哭，考场失手、职场失败、情场失利都包含在内；第二种是为他人而哭，显然就高尚许多。上次哭是什么时候呢？是为什么而哭呢？</p>
-<p>　　拉起她的手，我慢慢地，慢慢地走了出去。</p>
+<p>　　像是被什么托起似地，一种温暖的感觉轻轻地将我包裹。</p>
+<p>　　抹去她的眼泪，拉起她的手。我们慢慢地，慢慢地走了出去。</p>
 <p>　　——走去哪里？</p>
 <p>　　只是知道一个劲地走啊走。</p>
 <p>　　或许走去看最大、最高、最美的一朵向日葵；</p>
@@ -574,7 +577,7 @@ D -.-&gt;|功亏一篑的世界重构|P
 <span id="more"></span>
 <h2 id="8月27日周记"><a href="#8月27日周记" class="headerlink" title="8月27日周记"></a>8月27日周记</h2><p>　　下午，我去找林笃玩。不是很远，但得过一条马路。</p>
 <p>　　和往常一样，暑期的懒洋洋.ver林笃正趴在那里看店。</p>
-<p>　　连看惯的白色发卡也没别，朴素的家居服外披一件鹅黄的薄开衫就出来了。</p>
+<p>　　连看惯的白色发卡也没别，朴素的家居服外披一件米白的薄开衫就出来了。</p>
 <p>　　有一次我来的时候，她正像拉窗帘一样玩弄着自己耳梢两边的头发。拜此所赐，那副贞子（但是粉毛短发）的模样把我吓了一跳。</p>
 <p>　　反正这个点没什么人会来买水果，所以也没什么可做的，就只是和她在一起单纯地——看着。</p>
 <p>　　一只路边很常见的那种灰毛白条纹野猫快速地从店门前穿梭而过。</p>
@@ -3249,10 +3252,9 @@ E --&gt; |缓存|I&#123;里世界&#125;
 (function() {
     function calculateDays() {
         const currentYear = new Date().getFullYear();
-        const targetDate = new Date(currentYear, 8, 1); // 6月1日
+        const targetDate = new Date(currentYear, 8, 1); 
         const today = new Date();
 
-        // 重置时间为同一天的0点
         targetDate.setHours(0, 0, 0, 0);
         today.setHours(0, 0, 0, 0);
 
@@ -3260,7 +3262,7 @@ E --&gt; |缓存|I&#123;里世界&#125;
         const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
         if(days === 0) {
-            document.getElementById('days-count').textContent = "生日快乐，恶魔过境……";
+            document.getElementById('days-count').textContent = "蛋糕是个谎言！";
         } else if(days > 0) {
             document.getElementById('days-count').textContent = `${days} 天`;
         } else {
@@ -3268,7 +3270,7 @@ E --&gt; |缓存|I&#123;里世界&#125;
         }
     }
     calculateDays();
-    setInterval(calculateDays, 1000 * 60 * 60); // 每小时检查一次
+    setInterval(calculateDays, 1000 * 60 * 60); 
 })();
 </script>
 
