@@ -6,7 +6,7 @@
   <link href="https://beanbag-harry.netlify.app/atom.xml" rel="self"/>
   
   <link href="https://beanbag-harry.netlify.app/"/>
-  <updated>2025-09-01T10:05:28.379Z</updated>
+  <updated>2025-06-09T10:50:33.421Z</updated>
   <id>https://beanbag-harry.netlify.app/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>江恬生日倒计时</title>
-    <link href="https://beanbag-harry.netlify.app/2025/09/01/%E6%B1%9F-%E5%80%92%E8%AE%A1%E6%97%B6%20/"/>
-    <id>https://beanbag-harry.netlify.app/2025/09/01/%E6%B1%9F-%E5%80%92%E8%AE%A1%E6%97%B6%20/</id>
-    <published>2025-09-01T04:38:47.000Z</published>
-    <updated>2025-09-01T10:05:28.379Z</updated>
-    
-    <content type="html"><![CDATA[<!-- markdownlint-disable MD039 MD033 --><div style="text-align: center; padding: 15px; background: #fffaf0; border-radius: 8px;">    <p style="font-size: 1.2em; color: #ffb300;">🎂 距离九一还有：</p>    <div id="days-count" style="font-size: 2em; color: #ff8c00; font-weight: bold;"></div><script>(function() {    function calculateDays() {        const currentYear = new Date().getFullYear();        const targetDate = new Date(currentYear, 8, 1);         const today = new Date();        targetDate.setHours(0, 0, 0, 0);        today.setHours(0, 0, 0, 0);        const diff = targetDate - today;        const days = Math.ceil(diff / (1000 * 60 * 60 * 24));        if(days === 0) {            document.getElementById('days-count').textContent = "蛋糕是个谎言！";        } else if(days > 0) {            document.getElementById('days-count').textContent = `${days} 天`;        } else {            document.getElementById('days-count').textContent = "我要上学校～天天不迟到♪";        }    }    calculateDays();    setInterval(calculateDays, 1000 * 60 * 60); })();</script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;!-- markdownlint-disable MD039 MD033 --&gt;
-&lt;div style=&quot;text-align: center; padding: 15px; background: #fffaf0; border-radius: 8px;&quot;&gt;
-    &lt;p s</summary>
-      
-    
-    
-    
-    
-    <category term="Love-ChuChu" scheme="https://beanbag-harry.netlify.app/tags/Love-ChuChu/"/>
-    
-  </entry>
   
   <entry>
     <title>恋色空模样 | 一点小小的反驳和正名</title>
