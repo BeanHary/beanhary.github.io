@@ -51,24 +51,35 @@ flakeMove.prototype.render=function(t){var e=t.createRadialGradient(this.x,this.
 e.addColorStop(.5,"rgba(255, 255, 255, 0.5)"),/* 若要改为其他颜色，请自行查 */
 e.addColorStop(1,"rgba(255, 255, 255, 0)"),/* 找16进制的RGB 颜色代码。 */
 t.save(),t.fillStyle=e,t.beginPath(),t.arc(this.x,this.y,this.size,0,2*Math.PI),t.fill(),t.restore()};var snow=new snowFall({maxFlake:500});
-// 只在首页启动
+// 添加一个标志位，防止重复启动
+snow.isRunning=!1;
+// 修改原有的start方法，添加检查
+var originalStart=snow.start;
+// 判断是否为首页的函数
+function isHomePage(){var t=window.location.pathname;return!("/"!==t&&"/index.html"!==t&&!t.endsWith("/index"))||!(!document.body.classList.contains("home")&&!document.body.classList.contains("index"))}
+// 检查并启动雪花 - 使用新的逻辑
 function checkAndStartSnow(){
-// 判断是否为首页（根据你的Hexo主题选择一种方式）
-// 方式1：通过URL判断（最简单）
-var t=window.location.pathname;"/"!==t&&"/index.html"!==t||snow.start();
-// 方式2：通过body的class判断（推荐，更准确）
-// if (document.body.classList.contains('home') || 
-//     document.body.classList.contains('index')) {
-//     snow.start();
-// }
-}
+// 先完全停止雪花
+snow&&snow.stop(),
+// 延迟一点点，确保完全清理
+setTimeout(function(){isHomePage()&&snow.start()},50)}
 // 初始检查
-snow.start(),
-// 添加一个简单的停止方法
-window.stopSnow=function(){snow&&snow.loop&&(cancelAnimationFrame(snow.loop),snow.loop=null);var t=document.getElementById("snowfall");t&&t.remove()},checkAndStartSnow(),
+snow.start=function(){
+// 如果已经在运行，先停止
+this.isRunning&&this.stop(),this.isRunning=!0,originalStart.call(this)},
+// 修改stop方法，完全重置
+snow.stop=function(){
+// 停止动画循环
+this.loop&&(cancelAnimationFrame(this.loop),this.loop=null);
+// 移除canvas
+var t=document.getElementById("snowfall");t&&t.parentNode&&t.parentNode.removeChild(t),
+// 重置所有状态
+this.canvas=null,this.ctx=null,this.flakes=[],this.isRunning=!1},
+// 将stop方法暴露到全局
+window.stopSnow=function(){snow&&snow.stop()},"loading"===document.readyState?document.addEventListener("DOMContentLoaded",checkAndStartSnow):checkAndStartSnow(),
 // 监听Pjax页面切换
-document.addEventListener("pjax:complete",function(){
-// 先停止动画
-window.stopSnow(),
-// 重新检查是否为首页
-checkAndStartSnow()});
+document.addEventListener("pjax:complete",function(){checkAndStartSnow()}),
+// 添加页面隐藏时停止雪花（切换到其他标签页时）
+document.addEventListener("visibilitychange",function(){document.hidden?snow&&snow.stop&&snow.stop():
+// 重新显示时检查是否是首页
+setTimeout(checkAndStartSnow,100)});
