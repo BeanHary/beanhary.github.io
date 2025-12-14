@@ -1,7 +1,7 @@
 /* 控制下雪 */
 function snowFall(t){
 /* 可配置属性 */
-t=t||{},this.maxFlake=t.maxFlake||500,/* 最多片数 */
+t=t||{},this.maxFlake=t.maxFlake||300,/* 最多片数 */
 this.flakeSize=t.flakeSize||10,/* 雪花形状 */
 this.fallSpeed=t.fallSpeed||1}
 /* 兼容写法 */
