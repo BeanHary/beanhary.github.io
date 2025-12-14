@@ -50,7 +50,7 @@ flakeMove.prototype.reset=function(t,e){this.x=Math.floor(Math.random()*t),this.
 flakeMove.prototype.render=function(t){var e=t.createRadialGradient(this.x,this.y,0,this.x,this.y,this.size);e.addColorStop(0,"rgba(255, 255, 255, 0.9)"),/* 此处是雪花颜色，默认是白色 */
 e.addColorStop(.5,"rgba(255, 255, 255, 0.5)"),/* 若要改为其他颜色，请自行查 */
 e.addColorStop(1,"rgba(255, 255, 255, 0)"),/* 找16进制的RGB 颜色代码。 */
-t.save(),t.fillStyle=e,t.beginPath(),t.arc(this.x,this.y,this.size,0,2*Math.PI),t.fill(),t.restore()};var snow=new snowFall({maxFlake:500});
+t.save(),t.fillStyle=e,t.beginPath(),t.arc(this.x,this.y,this.size,0,2*Math.PI),t.fill(),t.restore()};var snow=new snowFall({maxFlake:150});
 // 添加一个标志位，防止重复启动
 snow.isRunning=!1;
 // 修改原有的start方法，添加检查
