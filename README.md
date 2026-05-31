@@ -2,7 +2,7 @@
 
 ## 关于网站 📝
 
-　　欢迎来到我的私人博客BeanBag。为了将来不忘记自己的前半生，我动笔写了一些自娱自乐的文字。
+　　欢迎来到我的私人博客BeanBag。为了不忘记自己的前半生，我动笔写了一些自娱自乐的文字。
 
 　　希望每位访客都能带着轻松慵懒的心情浏览这里的内容，感谢愿意在这些自言自语上驻留的你。
 
@@ -17,7 +17,6 @@
   - RSS订阅：[Hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
   - 夜间模式切换：[Hexo-next-darkmode](https://github.com/rqh656418510/hexo-next-darkmode)
   - 数学公式渲染：[Hexo-filter-mathjax](https://github.com/next-theme/hexo-filter-mathjax)
-  - 页面渲染优化：[Hexo-optimize](https://github.com/next-theme/hexo-optimize)
   - ~~里世界访问限制：[Hexo-hide-posts](https://github.com/prinsss/hexo-hide-posts)~~
 
 ## 写在最后 ✨
