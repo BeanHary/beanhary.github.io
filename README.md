@@ -18,6 +18,7 @@
   - 夜间模式切换：[Hexo-next-darkmode](https://github.com/rqh656418510/hexo-next-darkmode)
   - 数学公式渲染：[Hexo-filter-mathjax](https://github.com/next-theme/hexo-filter-mathjax)
   - 页面渲染优化：[Hexo-optimize](https://github.com/next-theme/hexo-optimize)
+  - 站点地图生成：[Hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap)
 
 ## 写在最后 ✨
 
