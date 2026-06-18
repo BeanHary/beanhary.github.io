@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://beanhary.github.io/404.html</loc>
+    
+    <lastmod>2026-06-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://beanhary.github.io/about/index.html</loc>
     
     <lastmod>2026-06-14</lastmod>
@@ -586,19 +595,10 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://beanhary.github.io/404.html</loc>
-    
-    <lastmod>2026-01-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://beanhary.github.io/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -606,49 +606,49 @@
   
   <url>
     <loc>https://beanhary.github.io/tags/Galgame/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beanhary.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beanhary.github.io/tags/%E7%A1%AC%E4%BB%B6%E6%95%B0%E7%A0%81/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beanhary.github.io/tags/%E9%AB%98%E4%B8%AD%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beanhary.github.io/tags/%E5%88%9D%E4%B8%AD%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beanhary.github.io/tags/%E5%B0%8F%E5%AD%A6%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beanhary.github.io/tags/%E5%8A%A8%E7%94%BB/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
